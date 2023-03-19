@@ -1,55 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página onepage</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Plantilla One Page</title>
+
+    <!-- Importamos los estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Importamos los estilos de Bootstrap -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/Logo.webp">
+
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#section1">Sección 1</a></li>
-                <li><a href="#section2">Sección 2</a></li>
-                <li><a href="#section3">Sección 3</a></li>
-                <li><a href="#section4">Sección 4</a></li>
-                <li><a href="#section5">Sección 5</a></li>
-                <li><a href="#section6">Sección 6</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img class="logoFW" src="imagenes/Logo.webp" alt="logo principal"> MisFotos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ´s</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section id="section1">
-            <h1>Sección 1</h1>
-            <p>Contenido de la sección 1</p>
-        </section>
-        <section id="section2">
-            <h1>Sección 2</h1>
-            <p>Contenido de la sección 2</p>
-        </section>
-        <section id="section3">
-            <h1>Sección 3</h1>
-            <p>Contenido de la sección 3</p>
-        </section>
-        <section id="section4">
-            <h1>Sección 4</h1>
-            <p>Contenido de la sección 4</p>
-        </section>
-        <section id="section5">
-            <h1>Sección 5</h1>
-            <p>Contenido de la sección 5</p>
-        </section>
-        <section id="section6">
-            <h1>Sección 6</h1>
-            <p>Contenido de la sección 6</p>
+        <h1 class="titulos">Blog de fotos</h1>
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Fotografia con el alma</h2>
+                    <p>Hola, mi nombre es Flash Click y soy un fotógrafo apasionado que busca capturar
+                        momentos únicos e irrepetibles. Mi equipo de trabajo incluye una cámara Nikon D3200 y un lente
+                        Tamron 16-270, los cuales me permiten capturar cada detalle de la escena que estoy
+                        fotografiando.</p>
+
+                    <p> Desde paisajes impresionantes hasta retratos íntimos, mi enfoque siempre está en encontrar la
+                        belleza en cada momento y en cada persona. Me encanta explorar nuevos lugares y descubrir nuevas
+                        perspectivas.</p>
+
+                    <p> Como fotógrafo, creo que la mejor manera de capturar momentos memorables es estar presente y
+                        conectado con el sujeto que estoy fotografiando. Me encanta trabajar con luz natural y
+                        aprovechar al máximo las características únicas de cada ubicación, para lograr resultados únicos
+                        y auténticos.</p>
+
+                    <p> Si estás buscando un fotógrafo que te ayude a capturar momentos especiales de tu vida, no dudes
+                        en contactarme. ¡Estoy listo para capturar la belleza que te rodea y crear recuerdos que durarán
+                        toda la vida!</p>
+                </div>
+                <div class="col-sm-6">
+                    <img class="imagen" src="https://live.staticflickr.com/65535/52758434254_e30db10531.jpg"
+                        alt="Mariposa Presentacion">
+                </div>
+                <div class="col-sm-6">
+                    <img class="imagen"
+                        src="https://img.freepik.com/foto-gratis/tres-camaras-retro-cerca-pelicula_23-2147852448.jpg?w=900&t=st=1679266251~exp=1679266851~hmac=dd2ccce50b83b8bd99662826ff5da3937170e06d17c5773999ab9cc5f1036653"
+                        alt="Camaras y objetivos">
+                </div>
+                <div class="col-sm-6">
+                    <h2>Camara y objetivo</h2>
+                    <p>La cámara Nikon D3200 es una cámara réflex digital de nivel básico que cuenta con un sensor CMOS
+                        de 24.2 megapíxeles y es capaz de grabar video Full HD a 1080p. El objetivo Tamron 16-270mm es
+                        una lente de zoom todo-en-uno que ofrece una amplia variedad de longitudes focales, desde gran
+                        angular a teleobjetivo.</p>
+
+                    <p> Al usar la cámara Nikon D3200 con el objetivo Tamron 16-270mm, puedes obtener una gran
+                        versatilidad para tus fotografías. Con la longitud focal de 16mm, puedes capturar imágenes de
+                        gran angular para paisajes o interiores, mientras que con la longitud focal de 270mm, puedes
+                        tomar fotos de sujetos distantes como animales o deportes. Además, el zoom variable te permite
+                        ajustar la longitud focal según tus necesidades específicas, lo que hace que sea una lente muy
+                        conveniente para llevar contigo y utilizar en una gran variedad de situaciones.</p>
+                </div>
+                <div>
+                    <p>Sin embargo, es importante tener en cuenta que los objetivos todo-en-uno a menudo no tienen la
+                        misma calidad óptica que los objetivos de zoom más específicos y pueden tener algunas
+                        limitaciones en términos de calidad de imagen en comparación con las lentes individuales más
+                        especializadas. También debes tener en cuenta las limitaciones técnicas de la cámara, como la
+                        sensibilidad ISO, la velocidad de obturación y la apertura, para poder utilizar la lente de
+                        manera efectiva en diferentes condiciones de luz y situaciones fotográficas.</p>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Pie de página</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Datos de contacto</h3>
+                    <ul>
+                        <li>Nombre del fotógrafo</li>
+                        <li>Dirección</li>
+                        <li>Teléfono</li>
+                        <li>Correo electrónico</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>Redes sociales</h3>
+                    <ul class="list-inline">
+                        <li><a href="#"><i class="facebook">Facebook</i></a></li>
+                        <li><a href="#"><i class="flickr">Flickr</i></a></li>
+                        <li><a href="#"><i class="instagram">Instagram</i></a></li>
+                        <li><a href="#"><i class="pinterest"></i>Pinterest</a></li>
+                    </ul>
+                </div>
+                <div class="desarrolladora">
+                    <h3><img class="logodes" src="imagenes/startupeate.webp" alt="Logo Desarrolladora">Startupeáte S.A</h3>
+                    <p>Donde las ideas se hacen realidad</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
 </body>
 
-</html>
+
+<!-- Importamos los scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">

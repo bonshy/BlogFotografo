@@ -1,55 +1,66 @@
-/* Estilos generales */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Estilos para el encabezado */
 header {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+    padding: 20px;
 }
 
-nav {
-    display: flex;
+.logoFW{
+    width:30px;
+    height: 30px;
     justify-content: center;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
+header h1 {
+    margin: 0;
+    font-size: 36px;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+header a {
     color: #fff;
     text-decoration: none;
+}
+.titulos{
+    margin-left: 83px;
     font-weight: bold;
-    transition: color 0.2s ease-in-out;
 }
 
-nav ul li a:hover {
-    color: #f1c40f;
+
+/* Estilos para los enlaces */
+a {
+    color: #000;
+    text-decoration: none;
 }
 
-/* Estilos para las secciones */
-section {
-    height: 100vh;
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-6 {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.imagen {
+    width: 100%;
+    filter: grayscale(100%);
+    padding-top: 8px;
+}
+p{
+    font-size: 14.8px;
 }
