@@ -160,5 +160,18 @@ footer a:hover {
     overflow-x: hidden;
   }
 }
+@media (max-width: 768px) {
+  .fotos1 {
+    margin: 5px 1% 5px 1%;
+    padding: 0px 0px;
+    width: 98%;
+    height: 400px;
+    justify-content: start;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    object-fit: cover;
+    overflow-x: hidden;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
