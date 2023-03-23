@@ -1,0 +1,91 @@
+.faqs{
+    background-image: url(https://www.digi-zoom.com.ar/images/blog_mirrorless_vs_dslr_cual_elegir_dslr.jpg);
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: rgb(8, 8, 8);
+    background-color: aqua;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contacto {
+    text-align: center;
+    color: aliceblue;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #747272;
+    color: rgb(10, 10, 10);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    justify-content: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #4a4b4a;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.titFaqs{
+    color:antiquewhite;
+    text-align: start;
+    font-size: 30px;
+}
+.titFaq2{
+    color:rgb(7, 7, 7);
+    text-align: start;
+    font-size: 20px;
+}
+
+.parrFaq{
+    color:antiquewhite;
+    text-align: start;
+}
+.contenedorFAQS {
+    width: 80%;
+    height: 80;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px 25px;
+    border: 1px black solid;
+    text-align: center;
+    border-radius: 5px;
+    background-color: (rgb(109, 108, 108))
+}

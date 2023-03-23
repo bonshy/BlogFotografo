@@ -5,14 +5,39 @@
 }
 
 @media (max-width: 768px) {
-        .fotos, .carousel, .titulos{
-            margin:5px 1% 5px 1%;
-            padding: 0px 0px;
-            width: 98%;
-            justify-content: start;
-            margin-bottom: 15px;
-            filter: grayscale(100%);
-            object-fit: cover;
-            overflow-x: hidden;
-        }
+
+    .fotos,
+    .carousel,
+    .titulos {
+        margin: 5px 1% 5px 1%;
+        padding: 0px 0px;
+        width: 98%;
+        justify-content: start;
+        margin-bottom: 15px;
+        filter: grayscale(100%);
+        object-fit: cover;
+        overflow-x: hidden;
+    }
+}
+
+
+// Definición del mixin
+@mixin media-query($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
+
+// Uso del mixin dentro de un selector
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    @include media-query(768px) {
+        width: 750px;
+    }
+
+    @include media-query(992px) {
+        width: 970px;
+    }
 }
